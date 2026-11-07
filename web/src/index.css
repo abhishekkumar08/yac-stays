@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+  font: inherit;
+  background: rgb(var(--mw-surface-muted));
+}
+
+.ys-price-pin {
+  background: rgb(var(--mw-surface));
+  color: rgb(var(--mw-fg));
+  border: 1px solid rgb(var(--mw-line));
+  border-radius: 9999px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.ys-price-pin[data-active="true"] {
+  background: rgb(var(--mw-fg));
+  color: rgb(var(--mw-canvas));
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.ys-no-scrollbar {
+  scrollbar-width: none;
+}
+
+.ys-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
